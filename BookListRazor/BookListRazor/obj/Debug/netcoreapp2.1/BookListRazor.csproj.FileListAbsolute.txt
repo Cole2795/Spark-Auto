@@ -68,3 +68,4 @@ C:\GIT\Net(online)\BookListRazor\BookListRazor\obj\Debug\netcoreapp2.1\BookListR
 C:\GIT\Net(online)\BookListRazor\BookListRazor\obj\Debug\netcoreapp2.1\BookListRazor.dll
 C:\GIT\Net(online)\BookListRazor\BookListRazor\obj\Debug\netcoreapp2.1\BookListRazor.pdb
 C:\GIT\Net(online)\BookListRazor\BookListRazor\obj\Debug\netcoreapp2.1\BookListRazor.csproj.CopyComplete
+C:\GIT\Net(online)\BookListRazor\BookListRazor\obj\Debug\netcoreapp2.1\Razor\Pages\BookList\Edit.cshtml.g.cs
