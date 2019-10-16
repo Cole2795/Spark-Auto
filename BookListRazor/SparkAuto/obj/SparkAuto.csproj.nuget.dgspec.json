@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\GIT\\Net(online)\\BookListRazor\\BookListRazor\\BookListRazor.csproj": {}
+    "C:\\GIT\\Net(online)\\BookListRazor\\SparkAuto\\SparkAuto.csproj": {}
   },
   "projects": {
-    "C:\\GIT\\Net(online)\\BookListRazor\\BookListRazor\\BookListRazor.csproj": {
+    "C:\\GIT\\Net(online)\\BookListRazor\\SparkAuto\\SparkAuto.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\GIT\\Net(online)\\BookListRazor\\BookListRazor\\BookListRazor.csproj",
-        "projectName": "BookListRazor",
-        "projectPath": "C:\\GIT\\Net(online)\\BookListRazor\\BookListRazor\\BookListRazor.csproj",
+        "projectUniqueName": "C:\\GIT\\Net(online)\\BookListRazor\\SparkAuto\\SparkAuto.csproj",
+        "projectName": "SparkAuto",
+        "projectPath": "C:\\GIT\\Net(online)\\BookListRazor\\SparkAuto\\SparkAuto.csproj",
         "packagesPath": "C:\\Users\\NicoleCampbell\\.nuget\\packages\\",
-        "outputPath": "C:\\GIT\\Net(online)\\BookListRazor\\BookListRazor\\obj\\",
+        "outputPath": "C:\\GIT\\Net(online)\\BookListRazor\\SparkAuto\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -23,14 +23,14 @@
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "netcoreapp2.1"
+          "netcoreapp2.2"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "netcoreapp2.1": {
+          "netcoreapp2.2": {
             "projectReferences": {}
           }
         },
@@ -41,28 +41,24 @@
         }
       },
       "frameworks": {
-        "netcoreapp2.1": {
+        "netcoreapp2.2": {
           "dependencies": {
             "Microsoft.AspNetCore.App": {
               "suppressParent": "All",
               "target": "Package",
-              "version": "[2.1.1, )",
+              "version": "[2.2.0, )",
               "autoReferenced": true
             },
             "Microsoft.AspNetCore.Razor.Design": {
               "suppressParent": "All",
               "target": "Package",
-              "version": "[2.1.2, )"
+              "version": "[2.2.0, )"
             },
             "Microsoft.NETCore.App": {
               "suppressParent": "All",
               "target": "Package",
-              "version": "[2.1.0, )",
+              "version": "[2.2.0, )",
               "autoReferenced": true
-            },
-            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
-              "target": "Package",
-              "version": "[2.1.9, )"
             }
           },
           "imports": [
