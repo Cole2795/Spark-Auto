@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.29009.5
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BookListRazor", "BookListRazor\BookListRazor.csproj", "{14EAB4C5-C4AA-4443-BB40-FF355A47A5F3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SparkAuto", "SparkAuto\SparkAuto.csproj", "{47EEC0B1-3B87-4796-9D9D-4864618DE324}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SparkAuto", "SparkAuto\SparkAuto.csproj", "{47EEC0B1-3B87-4796-9D9D-4864618DE324}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
