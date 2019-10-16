@@ -65,7 +65,7 @@ using BookListRazor;
             WriteLiteral("\r\n<br />\r\n<div class=\"container row\">\r\n    <div class=\"col-6\">\r\n        <h2 class=\"text-info\">Book List</h2>\r\n    </div>\r\n    <div class=\"col-6 text-right\">\r\n        ");
             EndContext();
             BeginContext(262, 64, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "5dd9a22d724c491e82cb536c42b13138", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "67397d5e1a89473ab2460800c797ebcf", async() => {
                 BeginContext(307, 15, true);
                 WriteLiteral("Create New Book");
                 EndContext();
@@ -112,7 +112,7 @@ using BookListRazor;
 #line default
 #line hidden
             BeginContext(643, 1195, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "0a136f30c3f1401d927670bfac6fe9df", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "edfe23c56c994ca18566a13da53c79ef", async() => {
                 BeginContext(663, 4, true);
                 WriteLiteral("\r\n\r\n");
                 EndContext();
@@ -195,7 +195,7 @@ using BookListRazor;
                 WriteLiteral("</td>\r\n            <td>\r\n                ");
                 EndContext();
                 BeginContext(1447, 82, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "e482dbb6bfbe49efa6ab1cb4bdedf344", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d29ed9a7b218445485fdb0fd80a5b16f", async() => {
                     BeginContext(1521, 4, true);
                     WriteLiteral("Edit");
                     EndContext();
@@ -231,7 +231,7 @@ using BookListRazor;
                 WriteLiteral("\r\n                ");
                 EndContext();
                 BeginContext(1547, 175, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("button", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f1f3b36890af4016ba7ac86e8251750b", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("button", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "6e1083a3765d49cdbd3b0881a35a02ae", async() => {
                     BeginContext(1707, 6, true);
                     WriteLiteral("Delete");
                     EndContext();
