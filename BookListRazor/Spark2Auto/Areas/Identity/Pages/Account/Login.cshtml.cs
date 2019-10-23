@@ -77,7 +77,7 @@ namespace Spark2Auto.Areas.Identity.Pages.Account
                 // This doesn't count login failures towards account lockout
                 // To enable password failures to trigger account lockout, set lockoutOnFailure: true
                 var user = _db.Users.FirstOrDefault(u => u.Email == Input.Email);
-                if(user!=null && !user.EmailConfirmed)
+                if (user != null && !user.EmailConfirmed)
                 {
                     return RedirectToPage("VerfiyEmail", new { id = Input.Email });
                 }

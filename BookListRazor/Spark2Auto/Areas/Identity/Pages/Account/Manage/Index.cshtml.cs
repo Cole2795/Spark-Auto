@@ -69,19 +69,19 @@ namespace Spark2Auto.Areas.Identity.Pages.Account.Manage
                 return NotFound($"Unable to load user with ID '{_userManager.GetUserId(User)}'.");
             }
 
-            //var userFromDb = await _db.ApplicationUser.FirstOrDefaultAsync(u => u.Email == user.Email);
+            var userFromDb = await _db.ApplicationUser.FirstOrDefaultAsync(u => u.Email == user.Email);
 
-            //Username = userFromDb.UserName;
+            Username = userFromDb.UserName;
 
-            //Input = new InputModel
-            //{
-            //    Email = userFromDb.Email,
-            //    PhoneNumber = userFromDb.PhoneNumber,
-            //    Address = userFromDb.Address,
-            //    City = userFromDb.City,
-            //    Name = userFromDb.Name,
-            //    PostalCode = userFromDb.PostalCode,
-            //};
+            Input = new InputModel
+            {
+                Email = userFromDb.Email,
+                PhoneNumber = userFromDb.PhoneNumber,
+                Address = userFromDb.Address,
+                City = userFromDb.City,
+                Name = userFromDb.Name,
+                PostalCode = userFromDb.PostalCode,
+            };
 
             IsEmailConfirmed = await _userManager.IsEmailConfirmedAsync(user);
 
@@ -101,14 +101,14 @@ namespace Spark2Auto.Areas.Identity.Pages.Account.Manage
                 return NotFound($"Unable to load user with ID '{_userManager.GetUserId(User)}'.");
             }
 
-            //var userFromDb = await _db.ApplicationUser.FirstOrDefaultAsync(u => u.Email == user.Email);
+            var userFromDb = await _db.ApplicationUser.FirstOrDefaultAsync(u => u.Email == user.Email);
 
-            //userFromDb.Name = Input.Name;
-            //userFromDb.Address = Input.Address;
-            //userFromDb.City = Input.City;
-            //userFromDb.PostalCode = Input.PostalCode;
-            //userFromDb.PhoneNumber = Input.PhoneNumber;
-            //await _db.SaveChangesAsync();
+            userFromDb.Name = Input.Name;
+            userFromDb.Address = Input.Address;
+            userFromDb.City = Input.City;
+            userFromDb.PostalCode = Input.PostalCode;
+            userFromDb.PhoneNumber = Input.PhoneNumber;
+            await _db.SaveChangesAsync();
 
             await _signInManager.RefreshSignInAsync(user);
             StatusMessage = "Your profile has been updated";

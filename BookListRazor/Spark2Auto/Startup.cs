@@ -13,6 +13,8 @@ using Microsoft.EntityFrameworkCore;
 using Spark2Auto.Data;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.AspNetCore.Identity.UI.Services;
+using Spark2Auto.Email;
 
 namespace Spark2Auto
 {
@@ -38,11 +40,23 @@ namespace Spark2Auto
             services.AddDbContext<ApplicationDbContext>(options =>
                 options.UseSqlServer(
                     Configuration.GetConnectionString("DefaultConnection")));
-            services.AddDefaultIdentity<IdentityUser>()
+            services.AddIdentity<IdentityUser, IdentityRole>()
+                .AddDefaultTokenProviders()
                 .AddDefaultUI(UIFramework.Bootstrap4)
                 .AddEntityFrameworkStores<ApplicationDbContext>();
+            services.AddSingleton<IEmailSender, EmailSender>();
 
-
+            services.AddAuthentication().AddFacebook(fb =>
+            {
+                fb.AppId = "2454729991463818";
+                fb.AppSecret = "107f5abd40468400ab7797cd685f637b";
+            });
+            services.AddAuthentication().AddGoogle(go =>
+            {
+                go.ClientId = "199105721183-6gj029bu7qmnm6hm0vuhat4mfk512aif.apps.googleusercontent.com";
+                go.ClientSecret = "L_arUV5qYM1rkdXZp1ccKRTc";
+            });
+            services.Configure<EmailOptions>(Configuration);
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
         }
 

@@ -15,5 +15,10 @@ namespace Spark2Auto.Data
         }
 
         public DbSet<ServiceType> ServiceType { get; set; }
+        public DbSet<ApplicationUser> ApplicationUser { get; set; }
+        public DbSet<Car> Car { get; set; }
+        public DbSet<ServiceShoppingCart> ServiceShoppingCart { get; set; }
+        public DbSet<ServiceHeader> ServiceHeader { get; set; }
+        public DbSet<ServiceDetails> ServiceDetails { get; set; }
     }
 }
